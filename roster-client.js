@@ -30,6 +30,7 @@ function loadPublicRoster(endpoint, options = {}) {
     };
     const timer = setTimeout(() => finish(new Error('讀取逾時，請稍後重新更新')), options.timeoutMs || 30000);
     script.onerror = () => finish(new Error('無法連線至班表服務'));
+    if(options.month) url.searchParams.set('month',options.month);
     url.searchParams.set('callback', callback);
     url.searchParams.set('_', Date.now().toString());
     script.src = url.href;
