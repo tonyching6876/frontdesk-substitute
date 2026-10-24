@@ -9,7 +9,7 @@
 <fieldset id="filters" disabled><label>日期<select id="date"></select></label><label>場地<select id="venue"><option value="C">音樂廳 C</option><option value="N">戲劇院 N</option><option value="E">實驗劇場 E</option><option value="R">演奏廳 R</option></select></label><label>時段<select id="slot"><option value="1">早場</option><option value="2">午場</option><option value="3" selected>晚場</option></select></label><label>姓名<input id="name" type="search" placeholder="篩選姓名"></label></fieldset>
 <div id="results" hidden><div id="cycle" class="cycle"></div><div id="counts" class="counts" aria-live="polite"></div><h2>可詢問名單</h2><div id="eligible" class="grid"></div><details id="pending-section"><summary id="pending-title">待確認名單</summary><p class="intro">資料不足的人員不列入可詢問名單，請由督導確認。</p><div id="pending" class="grid pending"></div></details><details><summary id="blocked-title">排除原因</summary><div id="blocked" class="grid"></div></details></div>
 <footer>週期：週三至下週二，每週期最多值勤 5 天。同一天接其他空缺時段不增加值勤日；連班只計一天。<br>試用期僅可接音樂廳與演奏廳；正職、特殊人員與實習生依各月資格排除。本頁顯示的時間是最後成功讀取時間，更新後的班表修改仍需再次按「更新班表」。</footer>
-</main><script src="site-config.js"></script><script src="core.js"></script><script src="roster-client.js"></script><script>
+</main><script src="site-config.js"></script><script src="core.js"></script><script src="roster-client.js?v=months-1"></script><script>
 
 let roster=null;
 const $=id=>document.getElementById(id);
